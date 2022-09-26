@@ -1,0 +1,29 @@
+{
+  "name": "@coverage/pg_js",
+  "version": "0.0.1",
+  "type": "module",
+  "engines": {
+    "node": ">=14.16.1",
+    "npm": ">=6.14.12"
+  },
+  "dependencies": {
+    "jest": "^27.5.0",
+    "uuidv4": "^6.2.12"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@napi-rs/cli": "^1.0.0",
+    "cross-env": "^7.0.3"
+  },
+  "napi": {
+    "name": "scylla"
+  },
+  "scripts": {
+    "build": "napi build --release",
+    "build:debug": "napi build"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
